@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>आज का काम — Aaj Ka Kaam</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    header {
+      background: #0b7a3b;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 17px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      margin: 18px 0;
+      border-radius: 15px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    .worker-btn {
+      background: #0b7a3b;
+      color: white;
+    }
+
+    .employer-btn {
+      background: #ff9800;
+      color: white;
+    }
+
+    .info {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>आज का काम</h1>
+    <p>आज काम चाहिए? आज ही काम पाइए।</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>👷 काम ढूंढ रहे हैं?</h2>
+      <p>आज आपके इलाके में उपलब्ध काम देखें।</p>
+      <button class="worker-btn" onclick="needWork()">
+        मुझे आज काम चाहिए
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>🏗️ कामगार चाहिए?</h2>
+      <p>आज के लिए अपने आसपास कामगार खोजें।</p>
+      <button class="employer-btn" onclick="needWorker()">
+        मुझे आज कामगार चाहिए
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>📍 धनबाद</h2>
+      <p>फिलहाल सेवा धनबाद से शुरू की जा रही है।</p>
+    </div>
+
+    <div class="info">
+      <p>काम और कामगार को सीधे जोड़ने का आसान तरीका।</p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 आज का काम — Aaj Ka Kaam
+  </footer>
+
+  <script>
+    function needWork() {
+      alert("जल्द ही यहाँ आज उपलब्ध काम दिखाए जाएंगे।");
+    }
+
+    function needWorker() {
+      alert("जल्द ही यहाँ कामगार जोड़ने की सुविधा उपलब्ध होगी।");
+    }
+  </script>
+
+</body>
+</html>
